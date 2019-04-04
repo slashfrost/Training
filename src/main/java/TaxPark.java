@@ -1,23 +1,21 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class TaxoPark extends Auto {
+public class TaxPark {
     private List<Auto> autoList = new ArrayList();
-    private double count;
-
-    public void sumCost(double i) {
-        for (i:autoList) {
-            i+= Auto.cost;
+    public void sumCost(double count) {
+        for (Auto i : autoList) {
+            count += i.cost;
         }
     }
-    double findAutoBySpeed(double range){
-        for (range:autoList) {
-            if (Auto.getMaxSpeed==range){
-                return range;
+
+    Auto findAutoBySpeed(double startValue, double endValue, double auto) {
+        for (Auto i : autoList) {
+            if (i.getMaxSpeed() >= startValue && i.getMaxSpeed() <= endValue) {
+                return i;
             }
         }
-
-
+        return null;
     }
 
     public void setAutoList(List<Auto> autoList) {
