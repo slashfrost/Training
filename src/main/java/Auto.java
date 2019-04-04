@@ -1,21 +1,33 @@
 
 public class Auto {
-    private String marka;
+    private String mark;
     private String bodyType;
     private double fuelСonsumption;
-    private double maxSpeed;
+    public static double maxSpeed;
     private int id;
+    public static double cost;
 
-    public String getMarka() {
-        return marka;
+    public Auto() {
+    }
+
+    public double getCost() {
+        return cost;
+    }
+
+    public void setCost(double cost) {
+        this.cost = cost;
+    }
+
+    public String getMark() {
+        return mark;
     }
 
     public String getBodyType() {
         return bodyType;
     }
 
-    public void setMarka(String marka) {
-        this.marka = marka;
+    public void setMark(String mark) {
+        this.mark = mark;
     }
 
     public void setBodyType(String bodyType) {
