@@ -7,8 +7,7 @@ public class Auto {
     private int id;
     public static double cost;
 
-    public Auto() {
-    }
+
 
     public double getCost() {
         return cost;

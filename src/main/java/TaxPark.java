@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TaxPark {
-    private List<Auto> autoList = new ArrayList();
+    public static List<Auto> autoList = new ArrayList();
     public void sumCost(double count) {
         for (Auto i : autoList) {
             count += i.cost;
