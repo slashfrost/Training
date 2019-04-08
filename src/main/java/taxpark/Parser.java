@@ -1,3 +1,5 @@
+package taxpark;
+
 import org.apache.log4j.Logger;
 
 import java.io.File;
@@ -22,7 +24,8 @@ public class Parser {
                 i.setId(scanner.nextInt());
                 TaxPark.autoList.add(i);
 
-            }log.info("Scanning finished");
+            }
+            log.info("Scanning finished");
             scanner.close();
         } catch (FileNotFoundException e) {
             System.out.println("Failed to locate file!");

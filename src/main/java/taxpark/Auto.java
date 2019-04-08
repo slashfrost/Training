@@ -1,3 +1,4 @@
+package taxpark;
 
 public class Auto {
     private String mark;
@@ -6,7 +7,6 @@ public class Auto {
     public static double maxSpeed;
     private int id;
     public static double cost;
-
 
 
     public double getCost() {
